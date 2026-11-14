@@ -1,21 +1,16 @@
 # Sentinel Log SIEM
 
-Python security monitoring experiments and log analysis utilities.
+An early Python security-log analysis prototype.
 
-## Projects
+## Contents
 
-### [SSH Brute Force Detector](projects/ssh-brute-force-detector)
+- [SIEM detection prototype](siem_motoru.py)
+- [Sample log events](sunucu_akis.log)
+- [Original project notes](read.md)
 
-Offline analysis of Linux SSH authentication logs using a configurable sliding window. Supports IPv4/IPv6 sources, JSON findings, synthetic sample data, and automated tests.
+## Standalone projects
 
-~~~bash
-cd projects/ssh-brute-force-detector
-python -m ssh_detector --log samples/auth.log --threshold 3 --window-minutes 5 --year 2026
-python -m unittest discover -s tests -v
-~~~
+The SSH log analysis mini-project has moved to its own repository:
+[SSH Brute Force Detector](https://github.com/RuzgarTugtek/SSH-Brute-Force-Detector).
 
-### [Original SIEM prototype](siem_motoru.py)
-
-The initial SIEM prototype and its sample log file are at the repository root. See [original notes](read.md).
-
-Each project can be explored separately.
+The original SIEM files remain in this repository. Run the prototype according to the original project notes.
